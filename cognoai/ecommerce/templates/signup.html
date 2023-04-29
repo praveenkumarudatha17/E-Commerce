@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+
+<div class="container mt-4">
+    
+    <div class="p-3 m-3">
+
+        
+        <div class="col-lg-5 rounded mx-auto border pt-4">
+            <div class="text-center col">
+            
+                <img
+                src="data:image/jpeg;base64,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" alt=""
+                class="" style="height: 150px;">
+            <!-- <hr> -->
+            <hr>
+            </div>
+            <h3 class="alert alert-success rounded-pill" style="text-align:center">Create an Account</h3>
+            <form action="/signup" method="POST">
+                
+                {% csrf_token %}
+
+                {% if error%}
+                <div class="alert alert-danger" role="alert">
+                    {{error}}
+                </div>
+                {% endif %}
+                <!-- firstname -->
+                <div class="form-group">
+                    <label for="">First Name</label>
+                    <input type="text" name="firstname"
+                     id="" value="{{values.first_name}}" class="form-control form-control-sm" 
+                     placeholder="">
+                </div>
+
+                <!-- last name -->
+                <div class="form-group">
+                    <label for="">Last Name</label>
+                    <input type="text" name="lastname" 
+                    id="" value="{{values.last_name}}" class="form-control form-control-sm"
+                    >
+                </div>
+
+                <!-- phone -->
+                <div class="form-group">
+                    <label for="">Phone</label>
+                    <input type="text" name="phone" 
+                    id="" class="form-control form-control-sm"
+                    value="{{values.phone}}"
+                    placeholder="8686382597"
+                    >
+                </div>
+                <!-- email -->
+                <div class="form-group">
+                    <label for="">Email</label>
+                    <input required type="email" name="email" id=""
+                    value="{{values.email}}" 
+                    class=" form-control-sm form-control" placeholder="cognoai@gmail.com">
+                </div>
+
+
+                <!-- password -->
+                <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" 
+                    name="password" 
+                    id=""
+                     class="form-control form-control-sm">
+                </div>
+
+                <!--Checkme button-->
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label d-grid gap-2" for="exampleCheck1">Check me out</label>
+                </div>
+                <hr>
+                <button type="submit" class="btn btn-sm btn-success col-lg-12">Create an account</button>
+
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
